@@ -121,28 +121,24 @@
                                             <ul>
                                                 <li>
                                                     <label onclick="document.getElementById('rating').value='1'">
-                                                        <i class="fa-regular fa-face-smile"></i>
+                                                    <i class="fa-regular fa-face-angry"></i>
                                                     </label>
                                                 </li>
                                                 <li>
                                                     <label onclick="document.getElementById('rating').value='2'">
-                                                        <i class="fa-regular fa-face-smile"></i>
-                                                    </label>
+                                                    <i class="fa-regular fa-face-frown"></i>                                                    </label>
                                                 </li>
                                                 <li>
                                                     <label onclick="document.getElementById('rating').value='3'">
-                                                        <i class="fa-regular fa-face-smile"></i>
-                                                    </label>
+                                                    <i class="fa-regular fa-face-smile"></i>                                                    </label>
                                                 </li>
                                                 <li>
                                                     <label onclick="document.getElementById('rating').value='4'">
-                                                        <i class="fa-regular fa-face-smile"></i>
-                                                    </label>
+                                                    <i class="fa-regular fa-face-laugh"></i>                                                    </label>
                                                 </li>
                                                 <li>
                                                     <label onclick="document.getElementById('rating').value='5'">
-                                                        <i class="fa-regular fa-face-smile"></i>
-                                                    </label>
+                                                    <i class="fa-regular fa-face-laugh-beam"></i>                                                    </label>
                                                 </li>
                                             </ul>
                                         </div>
@@ -154,7 +150,7 @@
                                     </div>
                                     <div class="footer">
                                         <button class="send_btn" type="submit" name="send">Send</button>
-                                        <button class="cancel_btn">cancel</button>
+                                        <button class="cancel_btn">Cancel</button>
                                     </div>
                                 </form>
                             </div>
