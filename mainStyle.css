@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sidebar{
+  position: fixed;
+  width: 20%;
+  height: 100%;
+  background: #1b1b1b;
+  transition: left 0.4s ease;
+}
+.sidebar.show{
+  left: 0px;
+}
+.sidebar .text{
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 65px;
+  text-align: center;
+  background: #1e1e1e;
+  letter-spacing: 1px;
+}
+nav ul{
+  background: #1b1b1b;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+}
+nav ul li{
+  line-height: 60px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+nav ul li:last-child{
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+nav ul li a{
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding-left: 40px;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  border-left: 3px solid transparent;
+}
+nav ul li.active a{
+  color: cyan;
+  background: #1e1e1e;
+  border-left-color: cyan;
+}
+nav ul li a:hover{
+  background: #1e1e1e;
+}
+nav ul ul{
+  position: static;
+  display: none;
+}
+nav ul .feat-show.show{
+  display: block;
+}
+nav ul .serv-show.show1{
+  display: block;
+}
+nav ul ul li{
+  line-height: 42px;
+  border-top: none;
+}
+nav ul ul li a{
+  font-size: 17px;
+  color: #e6e6e6;
+  padding-left: 80px;
+}
+nav ul li.active ul li a{
+  color: #e6e6e6;
+  background: #1b1b1b;
+  border-left-color: transparent;
+}
+nav ul ul li a:hover{
+  color: cyan!important;
+  background: #1e1e1e!important;
+}
+nav ul li a span{
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 22px;
+  transition: transform 0.4s;
+}
+nav ul li a span.rotate{
+  transform: translateY(-50%) rotate(-180deg);
+}
+.content{
+  position: fixed;
+  margin-top: 15%;
+  margin-left: 40%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+  color: #202020;
+  border: #1b1b1b solid;
+
+}
+.content .header{
+  font-size: 45px;
+  font-weight: 600;
+}
+.content > p{
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.card{
+  width: 30%;
+  display: inline-block;
+  box-shadow: 2px 2px 20px black;
+  border-radius: 5px; 
+  margin: 2%;
+ }
+
+.title{
+text-align: center;
+padding: 10px;
+
+}
+
+.card > p{
+  font-size: 20px;
+}
+
+.des{
+padding: 3px;
+text-align: center;
+
+padding-top: 10px;
+     border-bottom-right-radius: 5px;
+border-bottom-left-radius: 5px;
+}
+
+.button{
+margin-top: 40px;
+margin-bottom: 10px;
+background-color: white;
+border: 1px solid black;
+border-radius: 5px;
+padding:10px;
+}
+
+.button > a{
+  text-decoration: none;
+  color: #1b1b1b;
+}
+.button:hover{
+background-color: black;
+color: white;
+transition: .5s;
+cursor: pointer;
+}
